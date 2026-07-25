@@ -1,0 +1,19 @@
+{
+  "name": "CloudFlow CRM",
+  "short_name": "CloudFlow",
+  "description": "Modern AI-powered CRM platform",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
