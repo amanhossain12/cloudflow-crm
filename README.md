@@ -191,9 +191,6 @@ https://digitalheroesco.com
 GitHub:
 https://github.com/amanhossain12
 
-LinkedIn:
-(Add your LinkedIn profile here)
-
 ---
 
 ## 📜 License
