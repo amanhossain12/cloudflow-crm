@@ -38,7 +38,7 @@ function Footer() {
     <footer className="relative overflow-hidden border-t border-white/10 bg-black">
       {/* Glow */}
       <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-blue-600/10 blur-[170px]" />
-      <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-[170px]" />
+      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-[170px]" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-14 lg:grid-cols-5">
@@ -78,12 +78,9 @@ function Footer() {
                 (Icon, index) => (
                   <motion.a
                     key={index}
-                    whileHover={{
-                      y: -5,
-                      scale: 1.1,
-                    }}
+                    whileHover={{ y: -5, scale: 1.1 }}
                     href="#"
-                    className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-blue-400 hover:border-blue-500"
+                    className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-blue-400 transition hover:border-blue-500"
                   >
                     <Icon size={18} />
                   </motion.a>
@@ -117,14 +114,31 @@ function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-8 md:flex-row">
-          <p className="text-gray-500">
-            © {new Date().getFullYear()} CloudFlow. All rights reserved.
-          </p>
+        <div className="mt-16 border-t border-white/10 pt-8">
+          <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
+            <p className="text-gray-500">
+              © {new Date().getFullYear()} CloudFlow. All rights reserved.
+            </p>
 
-          <p className="text-center text-sm text-gray-500">
-            Designed & Developed with ❤️ using React + Tailwind CSS
-          </p>
+            <p className="text-center text-sm text-gray-500">
+              Designed & Developed with ❤️ using React + Tailwind CSS
+            </p>
+          </div>
+
+          {/* Digital Heroes Credit */}
+          <div className="mt-6 text-center">
+            <p className="text-sm text-gray-400">
+              Built for{" "}
+              <a
+                href="https://digitalheroesco.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-cyan-400 transition hover:text-cyan-300 hover:underline"
+              >
+                Digital Heroes Training Task
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
